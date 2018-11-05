@@ -7,11 +7,12 @@
     "test": "test"
   },
   "scripts": {
-    "migrate": "./node_modules/.bin/truffle migrate"
+    "migrate": "./node_modules/.bin/truffle migrate --network ropsten"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "truffle": "^4.1.14"
+    "truffle": "^4.1.14",
+    "truffle-hdwallet-provider": "^0.0.6"
   }
 }
