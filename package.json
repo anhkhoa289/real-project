@@ -7,7 +7,13 @@
     "test": "test"
   },
   "scripts": {
-    "migrate": "./node_modules/.bin/truffle migrate --network ropsten"
+    "coverage": "./node_modules/.bin/solidity-coverage",
+    "compile": "./node_modules/.bin/truffle compile",
+    "clean": "./node_modules/.bin/truffle networks --clean",
+    "migrate": "./node_modules/.bin/truffle migrate --network ropsten",
+    "testrpc": "./node_modules/.bin/ganache-cli --accounts 30",
+    "lint": "./node_modules/.bin/solium -d contracts --fix",
+    "test": "./node_modules/.bin/truffle test"
   },
   "author": "",
   "license": "ISC",
